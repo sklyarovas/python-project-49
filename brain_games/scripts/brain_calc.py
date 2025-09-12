@@ -2,7 +2,7 @@ from brain_games.core.core import core
 
 
 def main():
-    core('is_even')
+    core('calc')
 
 
 if __name__ == "__main__":
