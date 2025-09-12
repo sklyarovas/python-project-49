@@ -15,7 +15,7 @@ def core(game_name):
 
     game_description(description)
 
-    for i in range(3):
+    for _ in range(3):
         match game_name:
             case 'is_even':
                 value, correct_answer = is_even.get_attributes()
