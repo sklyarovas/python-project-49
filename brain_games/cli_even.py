@@ -8,8 +8,6 @@ def is_even():
     print(f'Hello, {name}\n'
     f'Answer "yes" if the number is even, otherwise answer "no".')
 
-    correct_unswer = ''
-
     for i in range(3):
         number = randint(0,100)
         correct_unswer = 'yes' if number % 2 == 0 else 'no'
