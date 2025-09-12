@@ -10,17 +10,18 @@ def welcome_user():
 def game_description(description):
     print(description)
 
-def dialogue(value):
-    print(f'Question: {value}')
-    answer = prompt.string('Your answer: ')
-    return answer
+def dialogue(expression):
+    print(f'Question: {expression}')
+    user_answer = prompt.string('Your answer: ')
+    return user_answer
 
 def success():
     print('Correct!')
 
-def fail(answer, correct_answer, name):
-    print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n"
+def fail(user_answer, correct_answer, name):
+    print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n"
     f"Let's try again, {name}!")
 
 def congratulations(name):
     print(f'Congratulations, {name}!')
+    

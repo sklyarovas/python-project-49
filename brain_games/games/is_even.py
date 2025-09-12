@@ -7,7 +7,7 @@ def get_description():
     return description
 
 def get_attributes():
-    value = randint(0, 100)
-    correct_answer = 'yes' if value % 2 == 0 else 'no'
+    expression = randint(0, 100)
+    correct_answer = 'yes' if expression % 2 == 0 else 'no'
     
-    return value, correct_answer
+    return expression, correct_answer

@@ -12,7 +12,7 @@ def get_attributes():
     operand1 = randint(0, 10)
     operand2 = randint(0, 10)
 
-    value = f'{operand1} {operator} {operand2}'
+    expression = f'{operand1} {operator} {operand2}'
     
     match operator:
         case '+':
@@ -22,4 +22,4 @@ def get_attributes():
         case '*':
             correct_answer = str(operand1 * operand2)
     
-    return value, correct_answer
+    return expression, correct_answer
