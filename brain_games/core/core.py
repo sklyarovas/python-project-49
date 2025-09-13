@@ -1,9 +1,9 @@
 from brain_games.cli import welcome_user, game_description, dialogue, success, fail, congratulations
-from brain_games.games import calc, gcd, is_even
+from brain_games.games import calc, gcd, is_even, progression
 
 
-def match_game(game_name, source):
-    match game_name, source:
+def get_game_data(game_name, data_type):
+    match game_name, data_type:
         case 'is_even', 'description':
             return is_even.get_description()
         case 'is_even', 'attributes':
@@ -18,17 +18,22 @@ def match_game(game_name, source):
             return gcd.get_description()
         case 'gcd', 'attributes':
             return gcd.get_attributes()
+
+        case 'progression', 'description':
+            return progression.get_description()
+        case 'progression', 'attributes':
+            return progression.get_attributes()
         case _:
             return
 
 def core(game_name):
     name = welcome_user()
-    description = match_game(game_name, 'description')
+    description = get_game_data(game_name, 'description')
 
     game_description(description)
 
     for _ in range(3):
-        expression, correct_answer = match_game(game_name, 'attributes')
+        expression, correct_answer = get_game_data(game_name, 'attributes')
         user_answer = dialogue(expression)
 
         if correct_answer == user_answer:

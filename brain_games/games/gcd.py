@@ -1,4 +1,5 @@
-from random import randint
+from brain_games.utils.randomizer import get_number
+from brain_games.utils.gcd import get_gcd
 
 
 def get_description():
@@ -6,19 +7,11 @@ def get_description():
     
     return description
 
-def get_gcd(a, b):
-    if b > a:
-        a, b = b, a
-    while b:
-        a, b = b, a % b
-
-    return str(a)
-
 def get_attributes():
-    a = randint(0, 50)
-    b = randint(0, 50)
+    num1 = get_number(0, 50)
+    num2 = get_number(0, 50)
 
-    expression = f'{a} {b}'
-    correct_answer = get_gcd(a, b)
+    expression = f'{num1} {num2}'
+    correct_answer = get_gcd(num1, num2)
     
     return expression, correct_answer

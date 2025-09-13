@@ -1,4 +1,4 @@
-from random import choice, randint
+from brain_games.utils.randomizer import get_number, make_choice
 
 
 def get_description():
@@ -8,9 +8,9 @@ def get_description():
 
 def get_attributes():
     operators = ['+', '-', '*']
-    operator = choice(operators)
-    operand1 = randint(0, 10)
-    operand2 = randint(0, 10)
+    operator = make_choice(operators)
+    operand1 = get_number(0, 10)
+    operand2 = get_number(0, 10)
 
     expression = f'{operand1} {operator} {operand2}'
     

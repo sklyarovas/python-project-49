@@ -22,3 +22,4 @@ make install
 * [brain-even](https://asciinema.org/a/P5EysG8m4Qn58coPbCPzDqxw3)
 * [brain-calc](https://asciinema.org/a/ErAststAs0bv8x4twP4rcp5eT)
 * [brain-gcd](https://asciinema.org/a/vX9OwsNMWHmU4OK969qFbom4v)
+* [brain-progression](https://asciinema.org/a/NFwUSpcaYIxgTPf0DisOVstEy)

@@ -1,4 +1,4 @@
-from random import randint
+from brain_games.utils.randomizer import get_number
 
 
 def get_description():
@@ -7,7 +7,7 @@ def get_description():
     return description
 
 def get_attributes():
-    expression = randint(0, 100)
+    expression = get_number(0, 100)
     correct_answer = 'yes' if expression % 2 == 0 else 'no'
     
     return expression, correct_answer
