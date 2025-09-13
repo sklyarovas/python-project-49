@@ -15,9 +15,9 @@ def get_data(game_name, data_type):
         "calc_attributes": calc.get_attributes(),
         "gcd_description": gcd.get_description(),
         "gcd_attributes": gcd.get_attributes(),
-        "is_even_desctiption": is_even.get_description(),
+        "is_even_description": is_even.get_description(),
         "is_even_attributes": is_even.get_attributes(),
-        "is_prime_desctiption": is_prime.get_description(),
+        "is_prime_description": is_prime.get_description(),
         "is_prime_attributes": is_prime.get_attributes(),
         "progression_description": progression.get_description(),
         "progression_attributes": progression.get_attributes()
