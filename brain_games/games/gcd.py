@@ -1,11 +1,12 @@
-from brain_games.utils.randomizer import get_number
 from brain_games.utils.math import get_gcd
+from brain_games.utils.randomizer import get_number
 
 
 def get_description():
     description = 'Find the greatest common divisor of given numbers.'
     
     return description
+
 
 def get_attributes():
     num1 = get_number(0, 50)

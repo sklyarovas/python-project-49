@@ -1,5 +1,5 @@
-from brain_games.utils.randomizer import get_number
 from brain_games.utils.math import get_progression
+from brain_games.utils.randomizer import get_number
 
 
 def get_description():
@@ -7,12 +7,14 @@ def get_description():
     
     return description
 
+
 def mask_progression(progression, masked_step):
     tmp = progression.copy()
     tmp[masked_step] = '..'
     masked = ' '.join(map(str, tmp))
 
     return masked
+
 
 def get_attributes():
     start = get_number(1, 20)

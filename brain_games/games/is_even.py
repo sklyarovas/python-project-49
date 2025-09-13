@@ -6,6 +6,7 @@ def get_description():
     
     return description
 
+
 def get_attributes():
     expression = get_number(0, 100)
     correct_answer = 'yes' if expression % 2 == 0 else 'no'

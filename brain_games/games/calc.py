@@ -6,6 +6,7 @@ def get_description():
     
     return description
 
+
 def get_attributes():
     operators = ['+', '-', '*']
     operator = make_choice(operators)
