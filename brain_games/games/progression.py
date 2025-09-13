@@ -1,5 +1,5 @@
 from brain_games.utils.randomizer import get_number
-from brain_games.utils.progression import get_progression
+from brain_games.utils.math import get_progression
 
 
 def get_description():
