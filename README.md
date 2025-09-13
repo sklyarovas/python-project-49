@@ -15,7 +15,28 @@
 
 ```bash
 make install
+make build
+make package-install
 ```
+
+### Run
+
+```bash
+brain-even
+brain-calc
+brain-gcd
+brain-prime
+brain-progression
+```
+
+### Description
+
+## Набор из 4 консольных игр:
+* brain-even - определите четное ли число
+* brain-calc - укажите разультат арифметического выражения
+* brain-gcd - укажите наибольший общий делитель двух чисел
+* brain-prime - определите является ли число простым
+* brain-progression - укажите пропущенное число в прогрессии
 
 ### Demo
 
