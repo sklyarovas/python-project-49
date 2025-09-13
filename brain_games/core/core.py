@@ -2,38 +2,31 @@ from brain_games.cli import welcome_user, game_description, dialogue, success, f
 from brain_games.games import calc, gcd, is_even, progression
 
 
-def get_game_data(game_name, data_type):
-    match game_name, data_type:
-        case 'is_even', 'description':
-            return is_even.get_description()
-        case 'is_even', 'attributes':
-            return is_even.get_attributes()
+def get_data(game_name, data_type):
+    funcs = {
+        "is_even_desctiption": is_even.get_description(),
+        "is_even_attributes": is_even.get_attributes(),
+        "calc_description": calc.get_description(),
+        "calc_attributes": calc.get_attributes(),
+        "gcd_description": gcd.get_description(),
+        "gcd_attributes": gcd.get_attributes(),
+        "progression_description": progression.get_description(),
+        "progression_attributes": progression.get_attributes()
+    }
 
-        case 'calc', 'description':
-            return calc.get_description()
-        case 'calc', 'attributes':
-            return calc.get_attributes()
+    choice = f'{game_name}_{data_type}'
+    func = funcs.get(choice, None)
 
-        case 'gcd', 'description':
-            return gcd.get_description()
-        case 'gcd', 'attributes':
-            return gcd.get_attributes()
-
-        case 'progression', 'description':
-            return progression.get_description()
-        case 'progression', 'attributes':
-            return progression.get_attributes()
-        case _:
-            return
+    return func
 
 def core(game_name):
     name = welcome_user()
-    description = get_game_data(game_name, 'description')
+    description = get_data(game_name, 'description')
 
     game_description(description)
 
     for _ in range(3):
-        expression, correct_answer = get_game_data(game_name, 'attributes')
+        expression, correct_answer = get_data(game_name, 'attributes')
         user_answer = dialogue(expression)
 
         if correct_answer == user_answer:
