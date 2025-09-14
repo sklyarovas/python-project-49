@@ -13,9 +13,13 @@ def game_description(description):
     print(description)
 
 
-def dialogue(expression):
+def dialogue(expression, input_type):
     print(f'Question: {expression}')
-    user_answer = prompt.string('Your answer: ')
+    match input_type:
+        case 'str':
+            user_answer = prompt.string('Your answer: ')
+        case 'int':
+            user_answer = prompt.integer('Your answer: ')
 
     return user_answer
 

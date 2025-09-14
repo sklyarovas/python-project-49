@@ -7,8 +7,9 @@ def get_description():
         'Answer "yes" if given number is prime. '
         'Otherwise answer "no".'
         )
+    input_type = 'str'
     
-    return description
+    return description, input_type
 
 
 def get_attributes():

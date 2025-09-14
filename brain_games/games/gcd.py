@@ -4,8 +4,9 @@ from brain_games.utils.randomizer import get_number
 
 def get_description():
     description = 'Find the greatest common divisor of given numbers.'
+    input_type = 'int'
     
-    return description
+    return description, input_type
 
 
 def get_attributes():

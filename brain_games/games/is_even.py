@@ -3,8 +3,9 @@ from brain_games.utils.randomizer import get_number
 
 def get_description():
     description = 'Answer "yes" if the number is even, otherwise answer "no".'
+    input_type = 'str'
     
-    return description
+    return description, input_type
 
 
 def get_attributes():

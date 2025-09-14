@@ -31,14 +31,14 @@ def get_data(game_name, data_type):
 
 def core(game_name):
     name = welcome_user()
-    description = get_data(game_name, 'description')
+    description, input_type = get_data(game_name, 'description')
 
     game_description(description)
     question_count = 3
 
     for _ in range(question_count):
         expression, correct_answer = get_data(game_name, 'attributes')
-        user_answer = dialogue(expression)
+        user_answer = dialogue(expression, input_type)
 
         if correct_answer == user_answer:
             success()

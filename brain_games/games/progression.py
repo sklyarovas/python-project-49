@@ -4,8 +4,9 @@ from brain_games.utils.randomizer import get_number
 
 def get_description():
     description = 'What number is missing in the progression?'
+    input_type = 'int'
     
-    return description
+    return description, input_type
 
 
 def mask_progression(progression, masked_step):
@@ -28,6 +29,6 @@ def get_attributes():
     progression = get_progression(start, diff, steps)
 
     expression = mask_progression(progression, masked_step)
-    correct_answer = str(progression[masked_step])
+    correct_answer = progression[masked_step]
     
     return expression, correct_answer

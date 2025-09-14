@@ -4,7 +4,7 @@ def get_gcd(a, b):
     while b:
         a, b = b, a % b
 
-    return str(a)
+    return a
 
 
 def get_progression(start, diff, steps):

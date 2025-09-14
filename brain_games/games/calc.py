@@ -3,8 +3,9 @@ from brain_games.utils.randomizer import get_number, make_choice
 
 def get_description():
     description = 'What is the result of the expression?'
+    input_type = 'int'
     
-    return description
+    return description, input_type
 
 
 def get_attributes():
@@ -19,10 +20,10 @@ def get_attributes():
     
     match operator:
         case '+':
-            correct_answer = str(operand1 + operand2)
+            correct_answer = operand1 + operand2
         case '-':
-            correct_answer = str(operand1 - operand2)
+            correct_answer = operand1 - operand2
         case '*':
-            correct_answer = str(operand1 * operand2)
+            correct_answer = operand1 * operand2
     
     return expression, correct_answer
