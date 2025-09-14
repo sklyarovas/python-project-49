@@ -17,9 +17,13 @@ def mask_progression(progression, masked_step):
 
 
 def get_attributes():
-    start = get_number(1, 20)
-    diff = get_number(1, 10)
-    steps = get_number(5, 10)
+    start_range = [1, 20]
+    diff_range = [1, 10]
+    steps_range = [5, 10]
+
+    start = get_number(*start_range)
+    diff = get_number(*diff_range)
+    steps = get_number(*steps_range)
     masked_step = get_number(0, steps - 1)
     progression = get_progression(start, diff, steps)
 

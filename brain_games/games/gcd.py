@@ -9,8 +9,10 @@ def get_description():
 
 
 def get_attributes():
-    num1 = get_number(0, 50)
-    num2 = get_number(0, 50)
+    num_range = [0, 50]
+
+    num1 = get_number(*num_range)
+    num2 = get_number(*num_range)
 
     expression = f'{num1} {num2}'
     correct_answer = get_gcd(num1, num2)

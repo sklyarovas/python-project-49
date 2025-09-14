@@ -34,8 +34,9 @@ def core(game_name):
     description = get_data(game_name, 'description')
 
     game_description(description)
+    question_count = 3
 
-    for _ in range(3):
+    for _ in range(question_count):
         expression, correct_answer = get_data(game_name, 'attributes')
         user_answer = dialogue(expression)
 

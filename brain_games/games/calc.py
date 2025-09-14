@@ -8,10 +8,12 @@ def get_description():
 
 
 def get_attributes():
+    operand_range = [0, 10]
     operators = ['+', '-', '*']
+
     operator = make_choice(operators)
-    operand1 = get_number(0, 10)
-    operand2 = get_number(0, 10)
+    operand1 = get_number(*operand_range)
+    operand2 = get_number(*operand_range)
 
     expression = f'{operand1} {operator} {operand2}'
     

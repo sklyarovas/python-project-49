@@ -12,7 +12,9 @@ def get_description():
 
 
 def get_attributes():
-    expression = get_number(1, 100)
+    num_range = [1, 100]
+
+    expression = get_number(*num_range)
     correct_answer = 'yes' if is_prime(expression) is True else 'no'
     
     return expression, correct_answer
