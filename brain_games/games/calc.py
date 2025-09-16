@@ -1,4 +1,4 @@
-from brain_games.utils.randomizer import get_number, make_choice
+from brain_games.utils import get_number, make_choice
 
 
 def get_description():

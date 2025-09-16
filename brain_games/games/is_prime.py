@@ -1,5 +1,4 @@
-from brain_games.utils.math import is_prime
-from brain_games.utils.randomizer import get_number
+from brain_games.utils import get_number, is_prime
 
 
 def get_description():

@@ -1,5 +1,4 @@
-from brain_games.utils.math import get_gcd
-from brain_games.utils.randomizer import get_number
+from brain_games.utils import get_gcd, get_number
 
 
 def get_description():
