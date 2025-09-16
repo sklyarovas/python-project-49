@@ -1,4 +1,4 @@
-from brain_games.utils import get_number, is_prime
+from brain_games.scripts.utils import get_number, is_prime
 
 
 def get_description():

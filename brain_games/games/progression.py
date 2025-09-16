@@ -1,4 +1,4 @@
-from brain_games.utils import get_number, get_progression
+from brain_games.scripts.utils import get_number, get_progression
 
 
 def get_description():

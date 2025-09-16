@@ -1,4 +1,4 @@
-from brain_games.core import core
+from brain_games.scripts.core import core
 
 
 def main():

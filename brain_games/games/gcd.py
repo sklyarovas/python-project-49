@@ -1,4 +1,4 @@
-from brain_games.utils import get_gcd, get_number
+from brain_games.scripts.utils import get_gcd, get_number
 
 
 def get_description():
